@@ -7,7 +7,7 @@ module alu_testbench();
     always #(2) clock <= ~clock;
     // Self test of the structural alu
     wire [13:0] alu_operand1, alu_operand2;
-    wire [1:0] alu_sel
+    wire [1:0] alu_sel;
     wire [14:0] structural_alu_out, behavioral_alu_out;
     wire test_fail;
 

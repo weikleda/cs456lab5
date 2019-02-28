@@ -2,7 +2,7 @@ module full_alu (
     input a,
     input b,
     input carry_in,
-    output out
+    output out,
     output carry_out
 );
     // Insert your RTL here to calculate the alu out and carry out bits
