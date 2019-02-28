@@ -29,12 +29,14 @@ module z1top (
     structural_alu structural_test_alu (
         .a(alu_operand1),
         .b(alu_operand2),
+        .sel(SWITCHES[1:0]),
         .out(structural_out)
     );
 
     behavioral_alu behavioral_test_alu (
         .a(alu_operand1),
         .b(alu_operand2),
+        .sel(SWITCHES[1:0]),
         .out(behavioral_out)
     );
 
